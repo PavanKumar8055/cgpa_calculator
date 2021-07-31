@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGPA_Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content">
+    <fieldset>
+    <h1>CGPA Calculator</h1>
+  </fieldset>
+    <table id="Table1">
+      <thead>Input</thead>
+      <tbody>
+          <tr>
+              <td>
+                  <table>
+                      <tbody>
+                          <tr>
+                              <td>
+                                  <b>Course Name</b>
+                              </td>
+                              <td>
+                                  <b>No.of Crdits</b>
+                              </td>
+                              <td>
+                                  <b>Select grade</b>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="text" name="da1" class="inlonger" placeholder="course 1">
+                              </td>
+                              <td>
+                                  <input type="text" id="c1" class="inlonger" placeholder="4">
+                              </td>
+                              <td>
+                                <p>
+                                  <select id="select1">
+                                  <option> </option>
+                                  <option value="10">s</option>
+                                  <option value="9">a</option>
+                                  <option value="8">b</option>
+                                  <option value="7">c</option>
+                                  <option value="6">d</option>
+                                  <option value="5">e</option>
+                                  <option value="4">f</option>
+                                  </select>
+                                </p>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="text" name="da2" class="inlonger" placeholder="course 2">
+                              </td>
+                              <td>
+                                  <input type="text" id="c2" class="inlonger" placeholder="4">
+                              </td>
+                              <td>
+                                  <select id="select2">
+                                    <option> </option>
+                                  <option value="10">s</option>
+                                  <option value="9">a</option>
+                                  <option value="8">b</option>
+                                  <option value="7">c</option>
+                                  <option value="6">d</option>
+                                  <option value="5">e</option>
+                                  <option value="4">f</option>
+                                  </select>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="text" name="da3" class="inlonger" placeholder="course 3">
+                              </td>
+                              <td>
+                                  <input type="text" id="c3" class="inlonger" placeholder="4">
+                              </td>
+                              <td>
+                                  <select id="select3">
+                                    <option> </option>
+                                  <option value="10">s</option>
+                                  <option value="9">a</option>
+                                  <option value="8">b</option>
+                                  <option value="7">c</option>
+                                  <option value="6">d</option>
+                                  <option value="5">e</option>
+                                  <option value="4">f</option>
+                                  </select>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="text" name="da4" class="inlonger" placeholder="course 4">
+                              </td>
+                              <td>
+                                  <input type="text" id="c4" class="inlonger" placeholder="4">
+                              </td>
+                              <td>
+                                  <select id="select4">
+                                    <option> </option>
+                                  <option value="10">s</option>
+                                  <option value="9">a</option>
+                                  <option value="8">b</option>
+                                  <option value="7">c</option>
+                                  <option value="6">d</option>
+                                  <option value="5">e</option>
+                                  <option value="4">f</option>
+                                  </select>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="text" name="da5" class="inlonger" placeholder="course 5">
+                              </td>
+                              <td>
+                                  <input type="text" id="c5" class="inlonger" placeholder="4">
+                              </td>
+                              <td>
+                                  <select id="select5">
+                                    <option> </option>
+                                  <option value="10">s</option>
+                                  <option value="9">a</option>
+                                  <option value="8">b</option>
+                                  <option value="7">c</option>
+                                  <option value="6">d</option>
+                                  <option value="5">e</option>
+                                  <option value="4">f</option>
+                                  </select>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="text" name="da6" class="inlonger" placeholder="course 6">
+                              </td>
+                              <td>
+                                  <input type="text" id="c6" class="inlonger" placeholder="4">
+                              </td>
+                              <td>
+                                  <select id="select6">
+                                    <option> </option>
+                                  <option value="10">s</option>
+                                  <option value="9">a</option>
+                                  <option value="8">b</option>
+                                  <option value="7">c</option>
+                                  <option value="6">d</option>
+                                  <option value="5">e</option>
+                                  <option value="4">f</option>
+                                  </select>
+                              </td>
+                          </tr>                                                                                                                                                                
+                      </tbody>
+                  </table>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+  <button onclick="getOption()" type="submit"> Submit </button>
+  <p>
+    Your CGPA is :
+  </p>
+  <p>
+    Total number of Credits:
+  </p>
+  </div>
+</body>
+
+<script  type="text/javascript">
+
+  function getOption() { 
+      selectElement1 =  document.querySelector('#select1'); 
+      selectElement2 =  document.querySelector('#select2');
+      selectElement3 =  document.querySelector('#select3');
+      selectElement4 =  document.querySelector('#select4');
+      selectElement5 =  document.querySelector('#select5');
+      selectElement6 =  document.querySelector('#select6');
+                
+      output1 =  selectElement1.value; 
+      output2 =  selectElement2.value;
+      output3 =  selectElement3.value;
+      output4 =  selectElement4.value;
+      output5 =  selectElement5.value;
+      output6 =  selectElement6.value;
+      out = ((parseInt(output1) + parseInt(output2) + parseInt(output3) + parseInt(output4) + parseInt(output5) + parseInt(output6))/6);
+     
+
+      document.querySelector('.output').textContent 
+              = out; 
+      
+      Credit1 =  document.querySelector('#c1'); 
+      Credit2 =  document.querySelector('#c2');
+      Credit3 =  document.querySelector('#c3');
+      Credit4 =  document.querySelector('#c4');
+      Credit5 =  document.querySelector('#c5');
+      Credit6 =  document.querySelector('#c6');
+                
+      output1 =  Credit1.value; 
+      output2 =  Credit2.value;
+      output3 =  Credit3.value;
+      output4 =  Credit4.value;
+      output5 =  Credit5.value;
+      output6 =  Credit6.value;
+      out = (parseInt(output1) + parseInt(output2) + parseInt(output3) + parseInt(output4) + parseInt(output5) + parseInt(output6));
+     
+
+      document.querySelector('.output').textContent 
+              = out; 
+  } 
+
+</script> 
+
+</html>
